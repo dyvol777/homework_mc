@@ -1,3 +1,4 @@
-﻿  main.cpp
-  mc.vcxproj -> c:\users\sergey\documents\visual studio 2015\Projects\mc\Debug\mc.exe
-  mc.vcxproj -> c:\users\sergey\documents\visual studio 2015\Projects\mc\Debug\mc.pdb (Full PDB)
+﻿  micro.cpp
+c:\users\sergey\documents\visual studio 2015\projects\mc\mc\micro.cpp(401): warning C4267: =: преобразование из "size_t" в "uint8_t"; возможна потеря данных
+  mc.vcxproj -> C:\Users\Sergey\documents\visual studio 2015\Projects\mc\Debug\mc.exe
+  mc.vcxproj -> C:\Users\Sergey\documents\visual studio 2015\Projects\mc\Debug\mc.pdb (Full PDB)
