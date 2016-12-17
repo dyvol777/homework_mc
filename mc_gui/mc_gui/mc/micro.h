@@ -11,7 +11,7 @@ class pin
 {
 public:
 	fstream file;
-	int leg;
+	bool leg;
 	int wr;
 };
 

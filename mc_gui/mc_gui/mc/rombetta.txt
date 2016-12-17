@@ -1,0 +1,11 @@
+get $1 1
+new $0 10
+new $1 11
+new $2 12
+new $3 13
+add $0 $1
+mov 2 $3
+new $2 1
+set $2 1
+set $2 2
+set $2 5

@@ -47,6 +47,14 @@ public:
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QListWidget *listWidget;
+    QWidget *verticalLayoutWidget_2;
+    QVBoxLayout *verticalLayout_2;
+    QCheckBox *checkBox_7;
+    QCheckBox *checkBox_8;
+    QCheckBox *checkBox_9;
+    QCheckBox *checkBox_10;
+    QCheckBox *checkBox_11;
+    QCheckBox *checkBox_12;
     QMenuBar *menuBar;
     QMenu *menuMicrocontroller_emulation;
     QToolBar *mainToolBar;
@@ -56,7 +64,7 @@ public:
     {
         if (mc_guiClass->objectName().isEmpty())
             mc_guiClass->setObjectName(QStringLiteral("mc_guiClass"));
-        mc_guiClass->resize(630, 519);
+        mc_guiClass->resize(789, 519);
         centralWidget = new QWidget(mc_guiClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         verticalLayoutWidget = new QWidget(centralWidget);
@@ -126,10 +134,54 @@ public:
         listWidget = new QListWidget(centralWidget);
         listWidget->setObjectName(QStringLiteral("listWidget"));
         listWidget->setGeometry(QRect(220, 130, 256, 192));
+        verticalLayoutWidget_2 = new QWidget(centralWidget);
+        verticalLayoutWidget_2->setObjectName(QStringLiteral("verticalLayoutWidget_2"));
+        verticalLayoutWidget_2->setGeometry(QRect(590, 20, 160, 371));
+        verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget_2);
+        verticalLayout_2->setSpacing(6);
+        verticalLayout_2->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        checkBox_7 = new QCheckBox(verticalLayoutWidget_2);
+        checkBox_7->setObjectName(QStringLiteral("checkBox_7"));
+        checkBox_7->setEnabled(false);
+
+        verticalLayout_2->addWidget(checkBox_7);
+
+        checkBox_8 = new QCheckBox(verticalLayoutWidget_2);
+        checkBox_8->setObjectName(QStringLiteral("checkBox_8"));
+        checkBox_8->setEnabled(false);
+
+        verticalLayout_2->addWidget(checkBox_8);
+
+        checkBox_9 = new QCheckBox(verticalLayoutWidget_2);
+        checkBox_9->setObjectName(QStringLiteral("checkBox_9"));
+        checkBox_9->setEnabled(false);
+
+        verticalLayout_2->addWidget(checkBox_9);
+
+        checkBox_10 = new QCheckBox(verticalLayoutWidget_2);
+        checkBox_10->setObjectName(QStringLiteral("checkBox_10"));
+        checkBox_10->setEnabled(false);
+
+        verticalLayout_2->addWidget(checkBox_10);
+
+        checkBox_11 = new QCheckBox(verticalLayoutWidget_2);
+        checkBox_11->setObjectName(QStringLiteral("checkBox_11"));
+        checkBox_11->setEnabled(false);
+
+        verticalLayout_2->addWidget(checkBox_11);
+
+        checkBox_12 = new QCheckBox(verticalLayoutWidget_2);
+        checkBox_12->setObjectName(QStringLiteral("checkBox_12"));
+        checkBox_12->setEnabled(false);
+
+        verticalLayout_2->addWidget(checkBox_12);
+
         mc_guiClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(mc_guiClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 630, 31));
+        menuBar->setGeometry(QRect(0, 0, 789, 31));
         menuMicrocontroller_emulation = new QMenu(menuBar);
         menuMicrocontroller_emulation->setObjectName(QStringLiteral("menuMicrocontroller_emulation"));
         mc_guiClass->setMenuBar(menuBar);
@@ -160,6 +212,12 @@ public:
         pushButton_2->setText(QApplication::translate("mc_guiClass", "RAM / REG", 0));
         pushButton_3->setText(QApplication::translate("mc_guiClass", "Run all", 0));
         pushButton_4->setText(QApplication::translate("mc_guiClass", "Run 1 step", 0));
+        checkBox_7->setText(QApplication::translate("mc_guiClass", "pin0", 0));
+        checkBox_8->setText(QApplication::translate("mc_guiClass", "pin1", 0));
+        checkBox_9->setText(QApplication::translate("mc_guiClass", "pin2", 0));
+        checkBox_10->setText(QApplication::translate("mc_guiClass", "pin3", 0));
+        checkBox_11->setText(QApplication::translate("mc_guiClass", "pin4", 0));
+        checkBox_12->setText(QApplication::translate("mc_guiClass", "pin5", 0));
         menuMicrocontroller_emulation->setTitle(QApplication::translate("mc_guiClass", "Microcontroller emulation!", 0));
     } // retranslateUi
 

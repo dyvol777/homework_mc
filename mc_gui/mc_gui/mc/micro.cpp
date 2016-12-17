@@ -2,16 +2,16 @@
 
 int micro::getPin(size_t i)
 {
-	if (pins[i].wr != 0)
-		throw exception("trying to read not input pin!");
+	//if (pins[i].wr != 0)
+		//throw exception("trying to read not input pin!");
 	cout << "getted" << endl;
 	return pins[i].leg;
 }
 
 void micro::setPin(size_t i, bool s)
 {
-	if (pins[i].wr != 1)
-		throw exception("trying to write not output pin!");
+	//if (pins[i].wr != 1)
+		//throw exception("trying to write not output pin!");
 	pins[i].leg = s;
 	cout << "setted" << endl;
 }
@@ -87,6 +87,12 @@ micro::micro() : pc(0)
 	{
 		pins[i].wr = -1;
 		pins[i].leg = 0;
+	}
+	for (auto i : ram)
+		i = 0;
+	for (auto i : reg)
+	{
+		i = 0;
 	}
 }
 
