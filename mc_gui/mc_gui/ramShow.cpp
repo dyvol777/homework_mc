@@ -12,7 +12,7 @@ ramShow::~ramShow()
 
 void ramShow::rawchange(uint8_t* a,uint8_t* b)
 {
-	ui.lcdNumber->display(a[0]);
+	ui.lcdNumber->display(*a);
 	ui.lcdNumber_2->display(a[1]);
 	ui.lcdNumber_3->display(a[2]);
 	ui.lcdNumber_4->display(a[3]);

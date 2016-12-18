@@ -115,6 +115,9 @@
     </layout>
    </widget>
    <widget class="QListWidget" name="listWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>220</x>

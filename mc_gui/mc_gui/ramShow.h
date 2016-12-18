@@ -14,5 +14,5 @@ public:
 private:
 	Ui::ramShow ui;
 public slots:
-	void rawchange(uint8_t* a,uint8_t* b);
+	void rawchange(uint8_t* a, uint8_t* b);
 };

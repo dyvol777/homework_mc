@@ -133,6 +133,7 @@ public:
 
         listWidget = new QListWidget(centralWidget);
         listWidget->setObjectName(QStringLiteral("listWidget"));
+        listWidget->setEnabled(true);
         listWidget->setGeometry(QRect(220, 130, 256, 192));
         verticalLayoutWidget_2 = new QWidget(centralWidget);
         verticalLayoutWidget_2->setObjectName(QStringLiteral("verticalLayoutWidget_2"));

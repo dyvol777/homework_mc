@@ -19,9 +19,9 @@ class micro
 {
 	friend class mc_gui;
 protected:
-	uint8_t reg[4];
+	uint8_t reg[4];  
 	pin pins[6];
-	uint8_t ram[16];
+	uint8_t ram[16]; 
 	int8_t cf;
 	vector<string> rom;
 	uint8_t pc;
@@ -56,8 +56,10 @@ protected:
 	void advanced();
 	void help();
 	void advhelp();
+	void clear();
 public:
 	micro();
+	
 	~micro();			
 	bool getcommands();		
 };

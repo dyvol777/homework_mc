@@ -88,9 +88,25 @@ micro::micro() : pc(0)
 		pins[i].wr = -1;
 		pins[i].leg = 0;
 	}
-	for (auto i : ram)
+	for (auto& i : ram)
 		i = 0;
-	for (auto i : reg)
+	for (auto& i : reg)
+	{
+		i = 0;
+	}
+} 
+
+void micro::clear() 
+{
+	pc = 0;
+	for (int i = 0;i < 6;i++)
+	{
+		pins[i].wr = -1;
+		pins[i].leg = 0;
+	}
+	for (auto& i : ram)
+		i = 0;
+	for (auto& i : reg)
 	{
 		i = 0;
 	}

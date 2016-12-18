@@ -5,8 +5,9 @@ mc_gui::mc_gui(QWidget *parent)
 {
 	ui.setupUi(this);
 	setConnections();
-	pic = new micro;
+	pic = new micro();
 	rs = new ramShow();
+	//pic->clear();
 	//QString str = QFileDialog::getOpenFileName(this, "Open Dialog", "", "*.txt");
 }
 
@@ -29,6 +30,8 @@ void mc_gui::setConnections()
 void mc_gui::showra()
 {
 	rs->show();
+	//pic->clear();
+	rs->rawchange(pic->reg, pic->ram); 
 }
 
 void mc_gui::rawchange()
