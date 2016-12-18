@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <iostream>
 #include <sstream>
@@ -17,7 +17,7 @@ public:
 
 class micro
 {
-	friend class mc_gui;		//интерфейс имеет доступ к логике?
+	friend class mc_gui;	//РёРЅС‚РµСЂС„РµР№СЃ РёРјРµРµС‚ РґРѕСЃС‚СѓРї Рє Р»РѕРіРёРєРµ?
 protected:
 	uint8_t reg[4];
 	pin pins[6];
@@ -26,7 +26,7 @@ protected:
 	vector<string> rom;
 	uint8_t pc;
 
-	//для работы с памятью и прочее
+	//РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ РїР°РјСЏС‚СЊСЋ Рё РїСЂРѕС‡РµРµ
 	void mov(uint8_t* a, uint8_t* b);	
 	void add(uint8_t* a, uint8_t* b);	
 	void sub(uint8_t* a, uint8_t* b);	
@@ -45,7 +45,7 @@ protected:
 	void jle(uint8_t* a);	
 	void jmp(uint8_t* a);
 
-	//пины
+	//РїРёРЅС‹
 	int getPin(size_t i);	
 	void setPin(size_t i, bool s);	
 	void setDefPin();
