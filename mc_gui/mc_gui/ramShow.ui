@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ramShow</class>
+ <widget class="QWidget" name="ramShow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>749</width>
+    <height>361</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ramShow</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>591</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLCDNumber" name="lcdNumber"/>
+    </item>
+    <item>
+     <widget class="QLCDNumber" name="lcdNumber_2"/>
+    </item>
+    <item>
+     <widget class="QLCDNumber" name="lcdNumber_3"/>
+    </item>
+    <item>
+     <widget class="QLCDNumber" name="lcdNumber_4"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>120</y>
+     <width>661</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_5"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_9"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_13"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_17"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_6"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_10"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_14"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_18"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_7"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_11"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_15"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_19"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_8"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_12"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_16"/>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber_20"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>90</y>
+     <width>68</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RAM</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>10</y>
+     <width>68</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Registers</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
