@@ -83,7 +83,7 @@ void micro::advhelp()
 
 micro::micro() : pc(0)
 {
-	for (int i = 0;i < 6;i++)
+	for (int i = 0;i < 6;i++) // здесь 6 -- magic value
 	{
 		pins[i].wr = -1;
 		pins[i].leg = 0;
@@ -102,14 +102,14 @@ void micro::next() try
 	string com;
 	stringstream ss(rom[pc]);
 	ss >> com;
-	if (com == "mov")
+	if (com == "mov") // сначала полностью декдоировать инструкцию, потом выполнять действия
 	{
 		string fo, so;
 		ss >> fo >> so;
 		if (fo[0] == '$')
 		{
 			if (so[0] == '$')
-				mov(reg + (fo[1] - '0'), reg + (so[1] - '0'));
+				mov(reg + (fo[1] - '0'), reg + (so[1] - '0')); // нет защиты от неправильного РОМ-а
 			else
 				mov(reg + (fo[1] - '0'), ram + stoi(so));
 		}
@@ -276,7 +276,7 @@ void micro::next() try
 	{
 		string fo, so;
 		ss >> fo >> so;
-		*(reg + (fo[1] - '0')) = (getPin(stoi(so)) | (*(reg + (fo[1] - '0')) & 254));
+		*(reg + (fo[1] - '0')) = (getPin(stoi(so)) | (*(reg + (fo[1] - '0')) & 254)); // запись в память без проверки границ
 	}
 	else if (com == "set")
 	{
