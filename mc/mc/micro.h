@@ -20,7 +20,7 @@ public:
 class micro
 {
 protected:
-	uint8_t reg[4];
+	uint8_t reg[4]; // std::array?
 	pin pins[6];
 	uint8_t ram[16];
 	int8_t cf;
