@@ -17,7 +17,7 @@ public:
 
 class micro
 {
-	friend class mc_gui;		//интерфейс имеет доступ к логике?
+	friend class mc_gui;		//интерфейс имеет доступ к логике? 
 protected:
 	uint8_t reg[4];
 	pin pins[6];
