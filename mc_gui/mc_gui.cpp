@@ -6,7 +6,7 @@ mc_gui::mc_gui(QWidget *parent)
 	ui.setupUi(this);
 	setConnections();
 	pic = new micro();
-	rs = new ramShow();
+	rs = new ramShow();//не закрывается при закрытии основного окна
 	//pic->clear();
 	//QString str = QFileDialog::getOpenFileName(this, "Open Dialog", "", "*.txt");
 }
@@ -73,7 +73,7 @@ void mc_gui::runAll()
 	setP();
 }
 
-void mc_gui::runOne()
+void mc_gui::runOne()//программа вылетает
 {
 	pic->next();
 	rawchange();
