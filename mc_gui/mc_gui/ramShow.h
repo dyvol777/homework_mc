@@ -8,7 +8,7 @@ class ramShow : public QWidget
 	Q_OBJECT
 
 public:
-	ramShow(QWidget *parent = Q_NULLPTR);
+	ramShow(QWidget *parent = Q_NULLPTR);	
 	~ramShow();
 
 private:

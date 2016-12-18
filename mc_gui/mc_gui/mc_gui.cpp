@@ -5,7 +5,7 @@ mc_gui::mc_gui(QWidget *parent)
 {
 	ui.setupUi(this);
 	setConnections();
-	pic = new micro;
+	pic = new micro;	
 	rs = new ramShow();
 	//QString str = QFileDialog::getOpenFileName(this, "Open Dialog", "", "*.txt");
 }
@@ -13,7 +13,7 @@ mc_gui::mc_gui(QWidget *parent)
 mc_gui::~mc_gui()
 {
 	rs->close();
-	delete pic;
+	delete pic;	//можно было ипользовать умные указатели
 	delete rs;
 }
 
@@ -56,6 +56,7 @@ void mc_gui::setP()
 	ui.checkBox_12->setChecked(pic->pins[5].leg);
 }
 
+//при нажатии на кнопку run all программа падает
 void mc_gui::runAll()
 {
 	getP();

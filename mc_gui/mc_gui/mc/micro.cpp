@@ -3,7 +3,7 @@
 int micro::getPin(size_t i)
 {
 	//if (pins[i].wr != 0)
-		//throw exception("trying to read not input pin!");
+		//throw exception("trying to read not input pin!");	ну начал делать и не закончил))
 	cout << "getted" << endl;
 	return pins[i].leg;
 }
